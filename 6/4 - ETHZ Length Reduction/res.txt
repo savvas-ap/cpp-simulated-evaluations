@@ -1,0 +1,31 @@
+ ~~~ Polygon hull: ~~~ 
+
+- {x: 0.000000, y: 0.000000, z: 4.000000}
+- {x: 80.527545, y: -100.078950, z: 4.000000}
+- {x: 158.040850, y: -154.399844, z: 4.000000}
+- {x: 168.174722, y: -47.613556, z: 4.000000}
+- {x: 111.232682, y: 7.361654, z: 4.000000}
+- {x: 103.658783, y: 25.120440, z: 4.000000}
+- {x: 65.422950, y: 63.837727, z: 4.000000}
+- {x: 66.254958, y: 90.337434, z: 4.000000}
+- {x: 92.526091, y: 118.194852, z: 4.000000}
+- {x: 81.092567, y: 160.532025, z: 4.000000}
+- {x: 70.757623, y: 197.599308, z: 4.000000}
+- {x: -94.084779, y: 135.379760, z: 4.000000}
+
+
+ - ConvCAO Evaluation:
+
+Percentage of coverage: 94.187846 %
+Percentage of overlaping coverage: 49.681384 %
+Number of waypoints (turns): 8
+Total length of path: 799.997505 meters
+
+
+
+ - ETHZ Evaluation:
+
+Percentage of coverage: 98.738265 %
+Percentage of overlaping coverage: 82.146088 %
+Number of waypoints (turns): 27
+Total length of path: 1916.819080 meters
