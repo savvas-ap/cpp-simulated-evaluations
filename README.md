@@ -5,7 +5,7 @@
 
 ### Description
 In this repository you can find a set of 20 polygon Regions of Interest (ROIs) that were used for the evaluation of an
-innovative, optimized for real-life use, STC-based, multi-robot Coverage Path Planning (mCPP) algorithm, along with the
+innovative, optimized for real-life use, STC-based, multi-robot Coverage Path Planning (mCPP) algorithm, based on a previous work of our lab [http://kapoutsis.info/wp-content/uploads/2017/02/j3.pdf | https://github.com/athakapo/DARP], along with the
 elaborate results for each ROI. In the context of this work, was developed and proposed an innovative optimization scheme,
 consisted of three separate terms (J_1, J_2 and J_3). In the results you can find the performance evaluation for the plain,
 non-optimized STC approach, and for the STC algorithm with the introduction of this optimization procedure, term-by-term.
