@@ -1,21 +1,21 @@
-## Cooperative Multi-UAV Coverage Mission Planning Platform for Remote Sensing Applications - Simulated Evaluation
+# Cooperative Multi-UAV Coverage Mission Planning Platform for Remote Sensing Applications - Simulated Evaluation
 
 ![mCPP plan](paths.png)
 
 
-### Description
+## Description
 In this repository you can find a set of 20 polygon Regions of Interest (ROIs) that were used for the evaluation of an
-innovative, optimized for real-life use, STC-based, multi-robot Coverage Path Planning (mCPP) algorithm, based on a previous work of our lab [http://kapoutsis.info/wp-content/uploads/2017/02/j3.pdf | https://github.com/athakapo/DARP], along with the
+innovative, optimized for real-life use, STC-based, multi-robot Coverage Path Planning (mCPP) algorithm, based on a previous work of our lab [ [paper](http://kapoutsis.info/wp-content/uploads/2017/02/j3.pdf) | [implementation](https://github.com/athakapo/DARP) ], along with the
 elaborate results for each ROI. In the context of this work, was developed and proposed an innovative optimization scheme,
 consisted of three separate terms (J_1, J_2 and J_3). In the results you can find the performance evaluation for the plain,
 non-optimized STC approach, and for the STC algorithm with the introduction of this optimization procedure, term-by-term.
 In addition to that, for each ROI are also calculated coverage plans, according to the methodology described in
-[https://arxiv.org/abs/1907.09224 | https://github.com/ethz-asl/polygon_coverage_planning], with two different cost
+[ [paper](https://arxiv.org/abs/1907.09224) | [implementation](https://github.com/ethz-asl/polygon_coverage_planning) ], with two different cost
 functions that intend to reduce the number of turns and overall length of path respectively. These results for all ROIs are also available
 in details.
 
 
-### Evaluation metrics
+## Evaluation metrics
 For each generated path were calculated the following evaluation metrics:
 
 - Percentage of Coverage (PoC)
@@ -35,7 +35,7 @@ following image)
 ![histogram of overlapping coverage](HOC.jpg)
 
 
-### Results structure
+## Results structure
 In folders 1-20 are included the elaborate results for each one of the 20 ROIs accordingly. Each of these folders
 contain 6 sub-folders, one for each methodology used for the path generation. The first four (0-3) are for the STC-based
 approach, while the other two (4-5) are for the work describe in [https://arxiv.org/abs/1907.09224 | 
@@ -59,4 +59,15 @@ planning method, along with a matlab variable containing the data used for their
 file containing the elaborate and average results, for all methodologies and ROIs is included.
 
 
+## An implementation of the optimized mCPP methodology can be found here:
 
+https://github.com/savvas-ap/mCPP-optimized-DARP
+
+
+## Cite as:
+
+```
+S. D. Apostolidis, P. Ch. Kapoutsis, A. Ch. Kapoutsis, E. B. Kosmatoupoulos,
+“Cooperative Multi-UAV Coverage Mission Planning Platform for Remote Sensing Applications”,
+“Autonomous Robots”, Under Review
+```
