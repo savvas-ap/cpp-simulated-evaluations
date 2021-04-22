@@ -38,8 +38,7 @@ following image)
 ## Results structure
 In folders 1-20 are included the elaborate results for each one of the 20 ROIs accordingly. Each of these folders
 contain 6 sub-folders, one for each methodology used for the path generation. The first four (0-3) are for the STC-based
-approach, while the other two (4-5) are for the work describe in [https://arxiv.org/abs/1907.09224 | 
-https://github.com/ethz-asl/polygon_coverage_planning]. Specifically the sub-folders included are:
+approach, while the other two (4-5) are for the work described in [ [paper](https://arxiv.org/abs/1907.09224) | [implementation](https://github.com/ethz-asl/polygon_coverage_planning) ]. Specifically the sub-folders included are:
 
 - 0 - No Optimization
 - 1 - J1 Optimization
@@ -64,7 +63,7 @@ file containing the elaborate and average results, for all methodologies and ROI
 https://github.com/savvas-ap/mCPP-optimized-DARP
 
 
-## Cite as:
+### In case you use this work or parts of it, please cite as:
 
 ```
 S. D. Apostolidis, P. Ch. Kapoutsis, A. Ch. Kapoutsis, E. B. Kosmatoupoulos,
