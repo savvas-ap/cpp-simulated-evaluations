@@ -4,9 +4,14 @@
 
 
 ## Description
-In this repository you can find a set of 20 polygon Regions of Interest (ROIs) that were used for the evaluation of an
-innovative, optimized for real-life use, STC-based, multi-robot Coverage Path Planning (mCPP) algorithm, based on a previous work of our lab [ [paper](http://kapoutsis.info/wp-content/uploads/2017/02/j3.pdf) | [implementation](https://github.com/athakapo/DARP) ], along with the
-elaborate results for each ROI. In the context of this work, was developed and proposed an innovative optimization scheme,
+In this repository you can find all the elaborate results that were used for the simulated evaluation of an
+innovative, optimized for real-life use, STC-based, multi-robot Coverage Path Planning (mCPP) algorithm, based on a previous work of our lab
+[ [paper](http://kapoutsis.info/wp-content/uploads/2017/02/j3.pdf) | [implementation](https://github.com/athakapo/DARP) ], along with the
+ROIs used for the evaluations. The simulated evaluation can be divided in two major parts: (i) the Single-Robot Paths Evaluation and (ii) the Multi-Robot Marginal
+utility study.
+
+For the first part of the evaluation, a set of 20 polygon Regions of Interest (ROIs) were used.
+In the context of this work, was developed and proposed an innovative optimization scheme,
 consisted of three separate terms (J_1, J_2 and J_3). In the results you can find the performance evaluation for the plain,
 non-optimized STC approach, and for the STC algorithm with the introduction of this optimization procedure, term-by-term.
 In addition to that, for each ROI are also calculated coverage plans, according to the methodology described in
@@ -14,8 +19,14 @@ In addition to that, for each ROI are also calculated coverage plans, according 
 functions that intend to reduce the number of turns and overall length of path respectively. These results for all ROIs are also available
 in details.
 
+Building on top of that, a Multi-Robot Marginal Utility Study was performed, to investigate what is the actual
+efficiency gains that can be acquired by the addition of multiple UAVs in the coverage missions with the proposed methodology.
+For this study two ROIs with strategically different areas were used, where the simulation of the coverage missions was performed
+by sequentially increasing the number of UAVs from 1 to 15.
 
-## Evaluation metrics
+
+## Single-Robot Paths Evaluation
+### Evaluation metrics
 For each generated path were calculated the following evaluation metrics:
 
 - Percentage of Coverage (PoC)
@@ -35,7 +46,7 @@ following image)
 ![histogram of overlapping coverage](HOC.jpg)
 
 
-## Results structure
+### Results structure
 In folders 1-20 are included the elaborate results for each one of the 20 ROIs accordingly. Each of these folders
 contain 6 sub-folders, one for each methodology used for the path generation. The first four (0-3) are for the STC-based
 approach, while the other two (4-5) are for the work described in [ [paper](https://arxiv.org/abs/1907.09224) | [implementation](https://github.com/ethz-asl/polygon_coverage_planning) ]. Specifically the sub-folders included are:
@@ -57,6 +68,23 @@ In the overall results, you will find the cumulative histograms of overlapping c
 planning method, along with a matlab variable containing the data used for their generation. In addition, a spreadsheet
 file containing the elaborate and average results, for all methodologies and ROIs is included.
 
+## Multi-Robot Marginal Utility Study
+### Evaluation metrics
+For each generated path were calculated the following evaluation metrics:
+
+- Percentage of Coverage (PoC)
+- Percentage of Overlapping Coverage (PoOC)
+- Number of batteries needed per UAV to complete the mission (#Bat/UAV)
+- Mission Time, referring to the estimated flight time for the mission
+- Deployment Time, referring to the estimated time to deploy the gear for a mission
+- Change Battery Delay
+- Total Time
+- Flight Cost
+
+In addition to them were created a heatmap of coverage for the paths in each mission execution and a histogram of overlapping coverage as well.
+Finally, some diagrams were created to visualize the Mission Time and the Total Time, contradicted to the Flight Cost (example in the following image)
+
+![#UAVs/Time/Cost diagram](Testbed-4.png)
 
 ## An implementation of the optimized mCPP methodology can be found here:
 
