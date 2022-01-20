@@ -5,7 +5,7 @@
 
 ## Description
 In this repository you can find all the elaborate results that were used for the simulated evaluation of an
-innovative, optimized for real-life use, STC-based, multi-robot Coverage Path Planning (mCPP) algorithm, based on a previous work of our lab
+innovative, optimized for real-life use, STC-based, multi-robot Coverage Path Planning (mCPP) algorithm, presented [in this work](https://arxiv.org/abs/2201.07030), based on a previous work of our lab
 [ [paper](http://kapoutsis.info/wp-content/uploads/2017/02/j3.pdf) | [implementation](https://github.com/athakapo/DARP) ], along with the
 ROIs used for the evaluations. The simulated evaluation can be divided in two major parts: (i) the Single-Robot Paths Evaluation and (ii) the Multi-Robot Marginal
 utility study.
@@ -86,15 +86,26 @@ Finally, some diagrams were created to visualize the Mission Time and the Total 
 
 ![#UAVs/Time/Cost diagram](Testbed-4.png)
 
-## An implementation of the optimized mCPP methodology can be found here:
+## Relevant/useful material:
 
-https://github.com/savvas-ap/mCPP-optimized-DARP
+Article's [page](https://link.springer.com/article/10.1007%2Fs10514-021-10028-3)
+
+arXiv [page](https://arxiv.org/abs/2201.07030)
+
+Paper's back-end module open source implementation [repo](https://github.com/savvas-ap/mCPP-optimized-DARP)
 
 
 ### In case you use this work or parts of it, please cite as:
 
 ```
-S. D. Apostolidis, P. Ch. Kapoutsis, A. Ch. Kapoutsis, E. B. Kosmatoupoulos,
-“Cooperative Multi-UAV Coverage Mission Planning Platform for Remote Sensing Applications”,
-“Autonomous Robots”, Under Review
+@article{Apostolidis_2022,
+	doi = {10.1007/s10514-021-10028-3},
+	url = {https://doi.org/10.1007%2Fs10514-021-10028-3},
+	year = 2022, 
+	month = {jan},	
+	publisher = {Springer Science and Business Media {LLC}}, 
+	author = {Savvas D. Apostolidis and Pavlos Ch. Kapoutsis and Athanasios Ch. Kapoutsis and Elias B. Kosmatopoulos},	
+	title = {Cooperative multi-{UAV} coverage mission planning platform for remote sensing applications}, 
+	journal = {Autonomous Robots}
+}
 ```
